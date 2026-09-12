@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quota Flow"
+  short_description: "Astra leads, Sol builds, Flash and Luna support"
+  default_prompt: "Use $quota-flow to implement this task and verify it with minimal avoidable usage."

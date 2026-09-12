@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+if [ "$#" -eq 0 ]; then
+  printf '%s\n' 'Usage: quota-flow <task description>' >&2
+  exit 2
+fi
+exec codex -m gpt-6-astra \
+  -c 'model_provider="openai"' \
+  -c 'model_reasoning_effort="low"' \
+  -c 'service_tier="default"' \
+  "Use \$quota-flow for this task: $*"
