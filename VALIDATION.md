@@ -31,6 +31,13 @@ this remains a runtime-validation gap for the full workflow.
 
 ## Usage evidence and limits
 
+GitHub publication was verified against the remote commit. The initial GitHub
+Actions run ended in `startup_failure` before creating any test jobs; no check-run
+diagnostic was exposed by the API. Repository Actions are enabled and the remote
+workflow matches the local file. Cloud CI is therefore **not verified passing**;
+the 12-test passing result above is local. Initial run:
+[34700582018](https://github.com/codejunkie99/quota-flow/actions/runs/34700582018).
+
 Provider-reported totals from the two bounded development runs:
 
 | Run | Input | Cached input (subset) | Output | Reasoning output (reported separately) |
